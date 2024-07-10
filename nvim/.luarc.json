@@ -1,0 +1,40 @@
+{
+    "runtime": {
+        "version": "LuaJIT",
+        "path": [
+            "?.lua"
+        ],
+        "pathStrict": true
+    },
+    "diagnostics": {
+        "globals": [
+            "vim"
+        ],
+        "disable": [
+            "missing-local-export-doc",
+            "missing-parameter"
+        ],
+        "groupFileStatus": {
+            "ambiguity": "Any",
+            "await": "Any",
+            "duplicate": "Any",
+            "global": "Any",
+            "luadoc": "Any",
+            "redefined": "Any",
+            "strict": "Any",
+            "type-check": "Any",
+            "unbalanced": "Any",
+            "unused": "Any"
+        }
+    },
+    "workspace": {
+        "maxPreload": 1600,
+        "preloadFileSize": 1000,
+        "checkThirdParty": false,
+        "library": [
+            "./lua/config/",
+            "./lua/plugins/"
+        ]
+    }
+}
+
